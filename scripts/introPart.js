@@ -1,6 +1,6 @@
 //check for web animations
 if(document.body.animate) {
-	document.querySelector('intro-button').addEventListener('click', pop);
+	document.querySelector('#introButton').addEventListener('click', pop);
 }
 else {
 	console.log("error");
@@ -17,26 +17,28 @@ function createParticle(x, y) {
 	document.body.appendChild(particle);
 
 	const size = Math.floor(Math.random() * 20 + 5);
+	
+	//` <--- this guy is pretty funny
+	//used for interpolating variable with string, not to be confused with single quotes :(
+	particle.style.width = `${size}px`;
+	particle.style.height = `${size}px`;
 
-	particle.style.width = '${size}px';
-	particle.style.height = '${size}px';
-
-	particle.style.background = 'hsl(${Math.random() * 90 + 180}, 70%, 60%)';
+	particle.style.background = `hsl(${Math.random() * 90 + 180}, 70%, 60%)`;
 
 	const destinationX = x + (Math.random() - 0.5) * 2 * 75;
 	const destinationY = y + (Math.random() - 0.5) * 2 * 75;
 
 	const animation = particle.animate([
 		{
- 			transform: 'translate(${x-(size/2)}px, ${y-(size/2)}px)',
+ 			transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
 			opacity: 1
 		},
 		{
-			transform: 'translate(${destinationX}px, ${destinationY}px)',
+			transform: `translate(${destinationX}px, ${destinationY}px)`,
 			opacity: 0
 		}
 	], {
-		duration: 500 + Math.random() * 1000,
+		duration: Math.random() * 1000 + 500,
 		easing: 'cubic-bezier(0, .9, .57, 1)',
 		delay: Math.random() * 200
 	});

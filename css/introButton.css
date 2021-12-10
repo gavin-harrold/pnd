@@ -1,3 +1,12 @@
+particle {
+	position: fixed;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+
 .intro-button {
 	display: inline-block;
 	border-radius: 4px;
@@ -36,15 +45,5 @@
 .intro-button:hover span:after {
 	opacity: 1;
 	right: 0;
-}
-
-//particle stuff
-particle {
-	border-radius: 50%;
-	left: 0;
-	pointer-events: none;
-	position: fixed;
-	top: 0;
-	opacity: 0;
 }
 	
