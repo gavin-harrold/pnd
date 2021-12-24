@@ -6,10 +6,16 @@ else {
 	console.log("error");
 }
 
+async function beginIntro() {
+	await new Promise(r => setTimeout(r, 1000));
+	document.body.innerHTML = ""; //any clearers?
+}
+
 function pop(e) {
 	for(let i = 0; i < 30; i++) {
 		createParticle(e.clientX, e.clientY);
 	}
+	setTimeout(beginIntro, 200); //maybe have it ease in somehow? works for now at least
 }
 
 function createParticle(x, y) {
@@ -39,6 +45,7 @@ function createParticle(x, y) {
 		}
 	], {
 		duration: Math.random() * 1000 + 500,
+		//when the bezier is cubic :flushed_face:
 		easing: 'cubic-bezier(0, .9, .57, 1)',
 		delay: Math.random() * 200
 	});

@@ -6,6 +6,25 @@ particle {
 	opacity: 0;
 }
 
+.animated:focus {
+	-webkit-animation-duration: 10s; animation-duration: 10s;
+	-webkit-animation-fill-mode: both; animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.fadeOut:focus {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
 
 .intro-button {
 	display: inline-block;
@@ -46,4 +65,7 @@ particle {
 	opacity: 1;
 	right: 0;
 }
-	
+
+.intro-button:focus {
+	opacity: 0;
+}	
