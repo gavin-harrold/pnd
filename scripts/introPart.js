@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = "gray";
+
 //check for web animations
 if(document.body.animate) {
 	document.querySelector('#introButton').addEventListener('click', pop);
@@ -9,6 +11,8 @@ else {
 async function beginIntro() {
 	await new Promise(r => setTimeout(r, 1000));
 	document.body.innerHTML = ""; //any clearers?
+	//initiate things
+	initiateStuff();
 }
 
 function pop(e) {
