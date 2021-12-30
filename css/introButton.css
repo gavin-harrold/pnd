@@ -26,6 +26,13 @@ particle {
 	animation-name: fadeOut;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
 .intro-button {
 	display: inline-block;
 	border-radius: 4px;
