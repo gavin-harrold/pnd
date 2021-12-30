@@ -1,0 +1,60 @@
+commit 4d7a60f3cc64698fa90a2474c68e67043cb23014
+Author: Gavin Harrold <gavinsharrold@gmail.com>
+Date:   Thu Dec 30 01:37:36 2021 -0500
+
+    completed first pass-through of implementation when it comes to modal configuration of images. can definitely be improved and prettied up, not bad for first attempt using mostly JS
+
+commit fe03b8ce87b92cb69aeb12891fc384cf6151e89e
+Merge: 7d51cda 138e574
+Author: Gavin Harrold <gavinsharrold@gmail.com>
+Date:   Tue Dec 28 01:39:50 2021 -0500
+
+    Merge branch 'master' of https://github.com/gavin-harrold/pnd
+
+commit 7d51cdadbacd3a449af5cdf5004a3006ef0f2dad
+Author: Gavin Harrold <gavinsharrold@gmail.com>
+Date:   Tue Dec 28 01:37:05 2021 -0500
+
+    added background image and changed default background to gray. also added initial pictures into filesystem, but is not uploaded to github due to obvious reasons
+
+commit 955543470af54b56aba089c4748b27c8bff45437
+Author: Gavin Harrold <gavinsharrold@gmail.com>
+Date:   Mon Dec 27 23:16:02 2021 -0500
+
+    created main script file
+
+commit ddf07f6ee7bcf3431ce654e0a0d588b8604fe644
+Author: Gavin Harrold <gavinsharrold@gmail.com>
+Date:   Fri Dec 24 18:30:27 2021 -0500
+
+    added document clearing after intro button press
+
+commit 138e5745eaa2cd04c62a54d43433184a3a7fd33b
+Author: Gavin <93807400+gavin-harrold@users.noreply.github.com>
+Date:   Thu Dec 9 19:26:34 2021 -0500
+
+    Delete .introPart.js.swp
+
+commit 37f05e648ab21623e10ac20c2224af295a987b2b
+Author: Gavin <93807400+gavin-harrold@users.noreply.github.com>
+Date:   Thu Dec 9 19:26:13 2021 -0500
+
+    Delete .fireworks swp file
+
+commit 3b5b600024d5af80e1d6448bbf0fa144bd49fbc7
+Author: Gavin S Harrold <gsh3009@banjo.rit.edu>
+Date:   Thu Dec 9 19:21:47 2021 -0500
+
+    fixed particle creation on button click
+
+commit 0f1f242810758c73c7fdb6241f1188bf90980490
+Author: Gavin <93807400+gavin-harrold@users.noreply.github.com>
+Date:   Thu Dec 9 18:16:51 2021 -0500
+
+    Created README.md
+
+commit 02640d0eadb9e816001c67d40fed744f99ee984d
+Author: Gavin S Harrold <gsh3009@banjo.rit.edu>
+Date:   Thu Dec 9 17:55:18 2021 -0500
+
+    initial commit
